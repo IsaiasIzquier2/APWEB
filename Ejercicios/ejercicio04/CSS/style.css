@@ -1,0 +1,41 @@
+/* Para Id como slect. se usa # (No es el uso adecuado de ID)*/
+#titulo { 
+    color: red;
+}
+
+/*Para class como selct. se usa .*/
+
+.trabajador {
+    background-color: gray;
+    padding-top: 1%;
+    
+
+}
+
+h2 {
+    text-align: center; 
+
+}
+
+.trabajador1 {
+    color: blue;
+}
+
+.trabajador2 {
+    color: green;
+}
+
+.datos{
+    border-style: solid;
+
+}
+
+.estudios{
+    border-style: double;
+    border-width: 5px;
+}
+
+span{
+    text-decoration: underline;
+}
+
