@@ -1,0 +1,14 @@
+
+body{
+    background-color: rgba(111, 113, 255, 0.582);
+    min-height: 100vh;
+}
+
+.menu-arriba{
+    background-color: rgb(96, 238, 238);
+}
+
+.menu-arriba ul{
+    list-style: none;
+    display: flex;
+}
