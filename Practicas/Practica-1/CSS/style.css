@@ -15,3 +15,84 @@ header {
 header h1 {
     margin: 0;
 }
+
+main {
+    background-color: beige;
+    padding: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.receta {
+    background-color: white;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+}
+
+img {
+    align-items: center;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.caracteristicas ul {
+    list-style: square;
+    padding-left: 20px;
+
+}
+
+.caracteristicas li {
+    margin-bottom: 10px ;
+}
+
+.ingredientes {
+    margin-top: 0.5rem;
+}
+
+.elaboracion{
+    line-height:1.6 ;
+}
+
+.ingredientes table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ingredientes th {
+    background-color: #F5A623;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold ;
+    text-align: center;
+}
+
+.ingredientes td {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid #eee ;
+    text-align: center;
+}
+
+.ingredientes tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+/* Quitar ultimo borde */
+
+.receta h1{
+    color: #F5A623;
+    text-align: center;
+}
+
+.receta h2{
+    color: #F5A623;
+}
