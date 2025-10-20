@@ -86,7 +86,9 @@ img {
     background-color: #fafafa;
 }
 
-
+.ingredientes  tr:last-child{
+    border-bottom: solid transparent;
+}
 
 .receta h1{
     color: #F5A623;
