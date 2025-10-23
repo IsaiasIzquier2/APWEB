@@ -9,29 +9,78 @@ html, body {
     height: 100%;
 }
 
-/* Configuración general del body */
+/* Configuración general del body.
+El body se convierte en contenedor flex
+-flex-direction; colum -> apila verticalmente el header 
+ */
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
     background: #d2effd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
 }
 
+
 /* Centramos y rellenamos la cabrcera */
+/* CABECERA con FLEX: dos zonas -> logo/titulo (brand) y el menu (nav) */
 .cabecera {
-    text-align: center;
+    /* text-align: center; */
     padding: 1rem;  
+    display: flex;
+    color:#c2c2c2;
+    background-color: #232a3d;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* Tamaño de la imagen */
+.logo {
+    height: 100px;
+    width: auto;
 }
 
 /* Titulo de la cabecera sin margenes extra y color destacado */
-.titulo {
+/* .titulo {
     margin: 0;
     color: #000930;
+} */
+
+/* Menu en horizontal */
+.menu {
+    list-style: none;
+    display: flex;                  /*Para colocar items en linea*/
+    flex-direction: row;            /*Es row ya por defecto*/
+    gap: 3rem;                      /*Espacio entre los enlaces*/
 }
+
+
+/* Estilo enlaces */
+.menu a {
+    color: whitesmoke;
+    text-decoration: none;          /*Elimina subrayado*/
+    font-weight: bold;              /*Negrita*/
+    padding: 20px
+}
+
+/* Efecto hover en enlaces*/
+.menu a:hover {
+    background-color: whitesmoke;
+    color: #232a3d;
+}
+
 
 /* main */
 #contenido-principal{
     padding: 1rem;
+    flex-grow: 1; /*Importante para emujar el footer hacia abajo*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rm
 }
 /* Clase tarjeta, usado para agrupar secciones visualmente */
 .tarjeta {
@@ -42,6 +91,11 @@ body {
     padding: 1.5rem;
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
 }
 
 /* listas en dos columnas, usamos flexbox para alinear dos elementos en horizontal  */
@@ -68,6 +122,26 @@ body {
     border-collapse: collapse;
     margin-top: 1rem;
     text-align: center;
+}
+
+/* Bordes y relleno de la tabla */
+.tabla th, .tabla td{
+    border: 1px solid #c2c2c2;
+    padding: 10px;
+}
+
+/* Csbecera de la tabla con estilo diferenciado */
+.tabla th {
+    background-color: #000930;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Contenido de tabla alineado a la izquierda */
+.tabla td {
+    text-align: left;
+    white-space: nowrap; /* Evita saltos de linea en las celdas*/
 }
 
 /* Estilo pie de página */
