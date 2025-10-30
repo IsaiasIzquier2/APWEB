@@ -152,3 +152,44 @@ body {
     padding: 1rem;
 }
 
+/* FORMULARIOS */
+
+label{
+    font-weight: bold;
+    
+}
+
+input:hover:invalid{
+    border: solid 1px red;
+}
+
+input:hover:valid{
+    border: solid 1px green;
+}
+
+input{
+    border-radius: 10px;
+    width: 60%;
+    height:40px;
+    margin-bottom: 2rem;
+}
+
+button{
+    max-width: 20%;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #d2effd;
+    border:solid 1px #232a3d;
+}
+
+button:hover{
+    background-color: #232a3d;
+    color:#d2effd;
+
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
