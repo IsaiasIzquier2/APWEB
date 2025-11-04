@@ -19,7 +19,8 @@
                 <li><a href="/Ejemploss/gamezone/index.html">Inicio</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Guías</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="/Ejemploss/gamezone/pages/contacto.html">Contacto</a></li>
+                <li><a href="">Registro</a></li>
             </ul>
         </nav>
     </header>
@@ -30,26 +31,29 @@
             <h2>Registro de usuario</h2>
             
             <form class="registro"  name="register" action="registro.html" method="post">
-                <!-- Campo de texto -->
-                <label for="nombre">Nombre de usuario:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" required> <!--required combierte el campo en obligatorio-->
-                
-                <!-- Contraseña -->
-                <label for="clave">Contraseña:</label>
-                <input type="password" id="clave" minlength="6" maxlength="12" required>
-
-                <!-- Campo de email -->
-                <label for="correo">Email:</label>
-                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
-                
-                <!-- Campo de DNI/NIE -->
-                <label for="dni">DNI/NIE:</label>
-                <input type="text" id="dni" name="documento" placeholder="12345678A/X1234567L" pattern="(([0-9]{8})|([X- Zx-z]{1})[0-9]{7})[A-Za-z{1}]" required>
-
-                <!-- Boton de envio -->
-                <button>
-                    Registrarse
-                </button>
+                <fieldset>
+                    <legend>Datos de registro</legend>
+                    <!-- Campo de texto -->
+                    <label for="nombre">Nombre de usuario:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellidos" required> <!--required combierte el campo en obligatorio-->
+                    
+                    <!-- Contraseña -->
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" id="clave" minlength="6" maxlength="12" required>
+    
+                    <!-- Campo de email -->
+                    <label for="correo">Email:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                    
+                    <!-- Campo de DNI/NIE -->
+                    <label for="dni">DNI/NIE:</label>
+                    <input type="text" id="dni" name="documento" placeholder="12345678A/X1234567L" pattern="(([0-9]{8})|([X- Zx-z]{1})[0-9]{7})[A-Za-z{1}]" required>
+    
+                    <!-- Boton de envio -->
+                    <button>
+                        Registrarse
+                    </button>
+                </fieldset>
 
             </form>
         </section>

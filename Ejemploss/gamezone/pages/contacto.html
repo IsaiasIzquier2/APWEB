@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Isaías Izquierdo Iglesias">
+    <meta name="descripton" content="Página web sobre videojuegos">
+    <link rel="stylesheet" href="/Ejemploss/gamezone/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="cabecera">
+        <div class="brand">
+            <img src="image/gamezone-logo.png" alt="Logo GameZone" class="logo">
+            <!-- <h1 class="titulo">GameZone</h1> -->
+        </div>
+        <nav class="navegaciion">
+            <ul class="menu">
+                <li><a href="/Ejemploss/gamezone/index.html">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Guías</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="/Ejemploss/gamezone/pages/registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        
+        <section class="tarjeta">
+            <form action="contacto.php" method="get">
+
+                <!-- Para agrupar varios campos del formulario -->
+                <fieldset>
+                    <legend>Lista desplegable</legend>
+                    <label for="cartegoria">Categoría:</label>
+                    <select name="cartegoria" id="cartegoria">
+                        <option value="fantasia">fantasía</option>
+                        <option value="rol">Rol</option>
+                        <option value="aventuras">Aventuras</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Input tipo radio</legend>
+
+                    <p>Selecciona la plataforma</p>
+
+                    <input type="radio" name="plataforma" id="pc" value="pc">
+                    <label for="pc">PC</label><br>
+
+                    <input type="radio" name="plataforma" id="ps5" value="ps5">
+                    <label for="pc">PS5</label><br>
+
+                    <input type="radio" name="plataforma" id="nintendo" value="nintendo">
+                    <label for="pc">Nintendo</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Input tipo checkbox</legend>
+
+                    <p>Selecciona la plataforma</p>
+
+                    <input type="checkbox" name="videoconsola" id="pc" value="pc">
+                    <label for="pc">PC</label><br>
+
+                    <input type="checkbox" name="videoconsola" id="ps5" value="ps5">
+                    <label for="pc">PS5</label><br>
+
+                    <input type="checkbox" name="videoconsola" id="nintendo" value="nintendo">
+                    <label for="pc">Nintendo</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Campo tipo fecha</legend>
+
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha" id="fecha">
+
+                    <label for="fecha-hora">Fecha y hora</label>
+                    <input type="datetime-local" name="fecha-hora" id="fecha-hora">
+
+                </fieldset>
+
+                <textarea name="mansaje" id="mensaje" cols="50" rows="10" placeholder="Deja aquí tu mensaje"></textarea>
+
+                <input type="submit" value="enviar">
+                <input type="reset" value="Limpiar formulario">
+            </form>
+        </section>
+
+    </main>
+    
+    <footer class="pie">
+        <p>&copy; Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
