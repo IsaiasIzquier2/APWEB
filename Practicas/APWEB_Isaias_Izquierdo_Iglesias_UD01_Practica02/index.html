@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="author" content="Isaías Izquierdo Iglesias">
+
+    <title>Formulario Incidencia</title>
+</head>
+<body>
+    
+    <header>
+        <img src="imagenes/IAT-LOGOTIPO.jpg" alt="">
+    </header>
+
+    <main>
+
+        <form action="">
+
+            <fieldset>
+                <legend>Nueva Incidencia</legend>
+
+                <div class="elemeto-formulario">
+                    <label for="profesor">Profesor *:</label>
+                    <input type="text" name="nombreProfesor" id="profesor" placeholder="Escribe tu nombre aquí." required>
+                </div>
+
+                <div>
+                    <label for="correo">Correo electrónico *:</label>
+                    <input type="email" name="correoProfesor" id="correo" placeholder="Escribe tu corrreo aquí." required>
+                </div>
+
+                <div>
+                    <label for="departamentos">Departamento *:</label>
+                    <select name="Departamento" id="departamentos">
+                        <option value="informatica"><I>Informática</I></option>
+                        <option value=""></option>
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="aula">Aula *:</label>
+                    <input type="text" name="aula" id="aula" placeholder="Indica aquí el aula." required>
+                </div>
+
+                <div>
+                    <label for="dia">Día de la incidencia *:</label>
+                    <input type="week" id="dia" name="diaIncidencia" required>
+                </div>
+
+                <div>
+                    <label for="hora">Hora de la incidencia *:</label>
+                    <input type="time" id="hora" name="horaIncidencia" required>
+                </div>
+
+                <div>
+                    <label for="descripcion">Día de la incidencia *:</label>
+                    <textarea name="descripcionIncidencia" id="descripcion" required></textarea>
+                </div>
+
+                <div>
+                    <label for="">Imaen de la incidencia</label>
+                </div>
+
+                <div>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="Limpiar formulario">
+                </div>
+                
+            </fieldset>
+
+        </form>
+
+   </main>
+
+   <footer>
+        <a href="https://www.facebook.com/cpifpalanturing/?locale=es_ES"><img src="imagenes/icons8-facebook-48.png" alt="Logo de facebook"></a>
+        <a href="https://x.com/cpifpalanturing?lang=es"><img src="imagenes/icons8-twitter-48.png" alt="Logo de twitter"></a>
+        <a href="https://www.instagram.com/cpifpalanturing/?hl=es"><img src="imagenes/icons8-instagram-48.png" alt="Logo de instagram"></a>
+        <a href="https://www.youtube.com/@cpifpalanturing"><img src="imagenes/icons8-youtube-48.png" alt="Logo de youtube"></a>
+        <a href="https://fpalanturing.es/"><img src="imagenes/icons8-website-48.png" alt="Logo www"></a>
+   </footer>
+
+</body>
+</html>
