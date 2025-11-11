@@ -197,3 +197,12 @@ legend{
 }
 
 /* CONTACTO */
+
+
+
+/* TIENDA */
+
+/* solo aplica a elementos con clase tienda y tarjeta a la vez */
+.tienda.tarjeta{
+    width: min(1600px, 95%);  /*aplica el valor más pequeño de esos dos*/
+}
