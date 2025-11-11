@@ -206,3 +206,80 @@ legend{
 .tienda.tarjeta{
     width: min(1600px, 95%);  /*aplica el valor más pequeño de esos dos*/
 }
+
+.lista-cards-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    justify-content: center; /*centrar horizontalmente*/
+}
+
+/* card individual */
+.card{
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.192);
+    background-color: #fff;
+    text-align: center;
+    padding: 12px;
+}
+
+/* imagen card */
+.card-image{
+    width: 100%;
+    height:180px ;
+    object-fit: contain; /*asegura que se vea completa y proporcionada*/
+    background-color: #d2effd;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* textos card */
+
+.card-titulo{
+    font-size: 1.1rem;
+    color: #333;
+    margin: 8px 0 4px;
+}
+
+.card-description{
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.card-precio{
+    color: rgb(131, 15, 15);
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* botón card */
+
+.card-boton{
+    background-color: #232a3d;
+    color: #c2c2c2;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none; /*quita subreyado del enlace*/
+    display: inline-block; 
+}
+
+/* GRID */
+
+.grid-container{
+    display: grid;   /*Activa modo grid*/
+    grid-template-columns: 200px 200px 200px; /*Tamaño de columna*/
+    grid-template-rows: 100px 100px;
+    gap: 20px;
+    justify-content: center; /*centra la cuadricula en el section*/
+    background: #333;
+
+}
+
+.grid-container :nth-child(1){ background-color:blue ;}
+.grid-container :nth-child(2){ background-color: green;}
+.grid-container :nth-child(3){ background-color: yellow;}
+.grid-container :nth-child(4){ background-color: burlywood;}
+.grid-container :nth-child(5){ background-color: chocolate;}
+.grid-container :nth-child(6){ background-color: greenyellow;}
