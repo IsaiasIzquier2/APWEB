@@ -268,18 +268,98 @@ legend{
 /* GRID */
 
 .grid-container{
+
+    background: #31e7ff3a;
+    padding: 10px;
+    height: 400px;
     display: grid;   /*Activa modo grid*/
-    grid-template-columns: 200px 200px 200px; /*Tamaño de columna*/
+    /* grid-template-columns: 100px repeat(2, 200px); /*Tamaño de columna*/
+    /* grid-template-rows: 100px 100px; */
+    
+
+    grid-template-columns:75px 125px 125px;
     grid-template-rows: 100px 100px;
-    gap: 20px;
-    justify-content: center; /*centra la cuadricula en el section*/
-    background: #333;
+
+    /*gap: 5px 30px;*/
+
+    column-gap: 5px;
+    row-gap: 20px;
+
+
+    /* ALINEACIÓN DE LOS ITEMS RESPECTO A SU CELDA*/
+    /* justify-items: center;
+    align-items: start; */
+
+    place-items:  stretch;
+
+    /* ALINEACIÓN DE LA CUADRICULA RESPECTO A SU CONT. PAE */
+
+    /* justify-content: end;
+    align-content: end; */
+
+    place-content: center;
+    
 
 }
 
-.grid-container :nth-child(1){ background-color:blue ;}
+.item-grid{
+    background-color: aqua;
+}
+
+.item-5{
+    padding: 20px;
+    background-color: #000930;
+    justify-self: end ;
+    align-self: start;
+
+}
+/* .grid-container :nth-child(1){ background-color:blue ;}
 .grid-container :nth-child(2){ background-color: green;}
 .grid-container :nth-child(3){ background-color: yellow;}
 .grid-container :nth-child(4){ background-color: burlywood;}
 .grid-container :nth-child(5){ background-color: chocolate;}
-.grid-container :nth-child(6){ background-color: greenyellow;}
+.grid-container :nth-child(6){ background-color: greenyellow;} */
+
+.contenedor-area{
+    display: grid;
+
+    /* fijamos num de columnas y filas */
+
+    grid-template-columns: 1fr 3fr 1fr ;
+    grid-template-rows: 2fr 5fr 1fr;
+
+    /* plantilla areas, disposición del grid */
+    grid-template-areas: 
+        "cabecera   cabecera    cabecera" 
+        "menu       principal   lateral"
+        "pie        pie         pie"
+    ;
+
+    gap: 10px;
+}
+
+.area-header{
+    grid-area: cabecera; /*Asignamos nombre de area*/
+    background-color: rgba(0, 0, 255, 0.531);
+}
+
+.area-menu{
+    grid-area: menu;
+    background-color: green;
+}
+
+.area-main{
+    grid-area: principal;
+    background-color: rgb(253, 253, 162);
+}
+
+.area-aside{
+    grid-area: lateral;
+    background-color: red;
+}
+
+.area-footer{
+    grid-area: pie;
+    background-color: gray;
+}
+
