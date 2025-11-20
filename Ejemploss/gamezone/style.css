@@ -80,7 +80,7 @@ body {
     flex-grow: 1; /*Importante para emujar el footer hacia abajo*/
     display: flex;
     flex-direction: column;
-    gap: 1rm
+    
 }
 /* Clase tarjeta, usado para agrupar secciones visualmente */
 .tarjeta {
@@ -192,9 +192,6 @@ legend{
     max-width: 80%;
 }
 
-.formulario-registro button{
-
-}
 
 /* CONTACTO */
 
