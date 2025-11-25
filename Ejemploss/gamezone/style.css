@@ -213,7 +213,7 @@ legend{
 
 /* card individual */
 .card{
-    width: 280px;
+    width: 100%;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.192);
@@ -360,3 +360,73 @@ legend{
     background-color: gray;
 }
 
+/* ========================================= */
+/*             PAGINA JUEGOS                 */
+/* ========================================= */
+
+.juegos.tarjeta{
+    width: min(1500px, 95%);
+}
+
+.lista-cards--grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /*
+    minmax(280px, 1fr): 
+        -Nunca menos de 200px
+        -Si hay espacio discponible, lo llena hasta ocupar el espacio sobreante
+
+    auto-fill:
+        -Intenta "llenar" la fila con el maximo número de columnas posible
+        -Si no puede quedaran huecos vacios
+
+    auto-fit:
+        -No deja huecos blancos cuando hay pocos elementos
+     */
+
+}
+
+/* .card-destacada{
+    background-color: #ddda0fc0;
+    grid-column: span 2;
+} */
+
+.celdas-irregulares{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    border: solid 1px black;
+}
+
+.item-1{
+    background-color: blue;
+    grid-column: 1/3;
+    grid-row: 1/span 2;
+}
+
+.item-2{
+    background-color: yellow;
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.item-3{
+    background-color: red;
+}
+
+
+/* DISEÑO RESPONSIVE */
+
+/* Media queries para móviles */
+
+@media (width <= 480px) and (width < 1024px){
+
+    .juegos.tarjeta{
+        width: 95%;
+    }
+
+    .lista-cards--grid{
+        grid-template-columns: repeat(2, minmax(220px, 1));
+    }
+}
